@@ -4,7 +4,7 @@ import http from "node:http";
 import { Readable } from "node:stream";
 
 // ↓ 中継したいサイトのURL（環境変数 TARGET で上書き可能）
-const TARGET = process.env.TARGET || "https://incariclient.org/play/";
+const TARGET = process.env.TARGET || "https://keyx0.net/pop/";
 const BASE = new URL(TARGET);
 const BARE = BASE.hostname.replace(/^www\./i, "");
 const SITE_HOSTS = [BARE, "www." + BARE];
